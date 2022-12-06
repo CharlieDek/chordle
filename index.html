@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet"media="screen" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200&display=swap" rel="stylesheet">
+    
+
+    <title>Chaz Wordle Converter</title>
+    <meta name="author" content="Charlie Dektar" />
+
+</head>
+<body>
+<h1>Put your wordle result below!</h1>
+<textarea id="wordle_input">
+</textarea>
+
+<!-- <div id="result_picture">⬛🟨⬛🟨⬛<br>⬛🟨⬛⬛🟨<br>⬛⬛🟨⬛🟨<br>⬛⬛🟩🟩⬛<br>🟩🟩🟩🟩🟩<br> -->
+<div id="result_picture"></div>
+<button id="copyBtn">Copy to clipboard</button>
+<table>
+    <tr>
+        <td>
+            <select class="emojiSelect" id="greenSelect">
+                <option value="🫑">🫑</option>
+                <option value="🦚">🦚</option>
+                <option value="🌵">🌵</option>
+                <option value="🐸">🐸</option>
+                <option value="🌳">🌳</option>
+                <option value="🍀">🍀</option>
+                <option value="🐲">🐲</option>
+                <option value="🪀">🪀</option>
+                <option value="🦠">🦠</option>
+                <option value="🍏">🍏</option>
+                <option value="💚">💚</option>
+                <option value="🟢">🟢</option>
+              </select>
+        </td>
+        <td>
+            <select class="emojiSelect" id="yellowSelect">
+                <option value="🐝">🐝</option>
+                <option value="🌻">🌻</option>
+                <option value="🌞">🌞</option>
+                <option value="🌝">🌝</option>
+                <option value="🐥">🐥</option>
+                <option value="🐯">🐯</option>
+                <option value="🌞">🌞</option>
+                <option value="🌼">🌼</option>
+                <option value="🧀">🧀</option>
+                <option value="🥞">🥞</option>
+                <option value="🧇">🧇</option>
+                <option value="🍯">🍯</option>
+                <option value="😬">😬</option>
+            </select>
+        </td>
+        <td><select class="emojiSelect" id="blackSelect">
+            <option value="🪨">🪨</option>
+            <option value="🌚">🌚</option>
+            <option value="🐈‍⬛">🐈‍⬛</option>
+            <option value="🌑">🌑</option>
+            <option value="🎱">🎱</option>
+            <option value="💿">💿</option>
+            <option value="💣">💣</option>
+            <option value="☁️">☁️</option>
+            <option value="💂">💂</option>
+            <option value="🗿">🗿</option>
+            <option value="🏴‍☠️">🏴‍☠️</option>
+          </select>
+        </td>
+    </tr>
+</table>
+
+<!-- scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script src="js/chordle.js"></script>
+
+</body>
+</html>
