@@ -28,6 +28,10 @@ table {
     border-color: transparent;
 }
 
+h4 {
+    font-size: 13px;
+}
+
 #greenSelect {
     background-color: #538d4e;
 }
