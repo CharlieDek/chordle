@@ -1,10 +1,31 @@
 $("#wordle_input").focus();
 
+const c_EMOJI_MAPPING = {
+  "☁️": ["☁️","⛅", "☀️"],
+  "🌜": ["🌑","🌓", "🌕"],
+  "🌵": ["🌵","🌞", "🦎"],
+  "🦦": ["🌳","🐟", "🦦"],
+  "🍕": ["🥫","🧀", "🍕"],
+  "🎆": ["⬛","🎇", "🎆"],
+  "🧻": ["🚽","🧻", "💩"],
+  "👠": ["🏙","🛍", "👠"],
+  "🎸": ["🥁","🎸", "🎤"],
+  "🔒": ["🔒","🔓", "💶"],
+}
+
 function makeReplacements(s) {
-  blackReplace1 = s.replace(/⬛/g, $("#blackSelect").val());
-  blackReplace = blackReplace1.replace(/⬜/g, $("#blackSelect").val());
-  yellowReplace = blackReplace.replace(/🟨/g, $("#yellowSelect").val());
-  return yellowReplace.replace(/🟩/g, $("#greenSelect").val());
+  const themeArr = c_EMOJI_MAPPING[$("#themeSelect").val()];
+  console.log(themeArr);
+  var blackReplace = themeArr[0]; // $("#blackSelect").val()
+  console.log(blackReplace);
+  var yellowReplace = themeArr[1];
+  console.log(yellowReplace);
+  var greenReplace = themeArr[2];
+  console.log(greenReplace);
+  blackReplace1 = s.replace(/⬛/g, blackReplace);
+  blackReplace = blackReplace1.replace(/⬜/g, blackReplace);
+  yellowReplace = blackReplace.replace(/🟨/g, yellowReplace);
+  return yellowReplace.replace(/🟩/g, greenReplace);
 }
 
 function doReplacements() {
