@@ -22,7 +22,7 @@ table {
 
 .emojiSelect {
     margin-top: 20px;
-    font-size: 40px;
+    font-size: 35px;
     padding: 15px;
     border-radius: 10px;
     border-color: transparent;
@@ -35,6 +35,9 @@ h4 {
 #greenSelect {
     background-color: #538d4e;
 }
+
+optgroup { font-size:40px; }
+
 
 #yellowSelect {
     background-color: #b59f3a;
