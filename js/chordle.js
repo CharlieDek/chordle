@@ -89,5 +89,3 @@ $("#copyBtn").click( function(){
 $( ".emojiSelect" ).change(function() {
   doReplacements();
 });
-
-doReplacements();
