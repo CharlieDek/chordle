@@ -87,7 +87,7 @@ $("#wordle_input").on('input',function(e){
 $("#copyBtn").click( function(){
   var niceText = $("#result_picture").html().replace(/<br>/g, "\n").trim();
   navigator.clipboard.writeText(niceText);
-  $("#WaLink").show();
+//   $("#WaLink").show();
 });
 
 $("#WaLink").click( function(){
